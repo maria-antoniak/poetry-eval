@@ -1,4 +1,4 @@
-# poetry-eval
+# Sonnet or Not, Bot?
 
 This repository contains code and data for the following paper.
 
