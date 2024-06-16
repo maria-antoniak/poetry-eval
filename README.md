@@ -9,7 +9,7 @@ This repository contains code and data for the following paper.
 ## Data
 
 The data in this repository includes:
-- [1.4k+ public domain poems](data/poetry-evaluation_public-domain-poems.csv) tagged by poetic form by the Poetry Foundation, the American Academy of Poets, or both with accompanying metadata such as subject tags and author birth and death dates where available
+- [1.4k+ public domain poems](data/poetry-evaluation_public-domain-poems.csv) tagged by poetic form by the Poetry Foundation, the Academy of American Poets, or both — with accompanying metadata such as subject tags and author birth and death dates where available
 - retrieval metadata from [Dolma]() using the [WIMBD]() platform including source domains for each detected poem
 
 <br><br>
