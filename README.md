@@ -20,5 +20,5 @@ The code in this repository includes:
 - a Python notebook demonstrating how to query for data from [Dolma](https://allenai.github.io/dolma/) using the [WIMBD](https://github.com/allenai/wimbd) platform
 - a Python notebook analyzing the query data from Dolma
 - a Python notbeook demonstrating the memorization experiments
-- Python scripts demonstrating how to prompt models for the poetry form classifciation task
+- Python scripts demonstrating how to prompt models for the poetry form classifcation task
 - a Python notebook demonstrating analysis of classification results

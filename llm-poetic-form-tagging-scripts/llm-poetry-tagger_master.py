@@ -500,12 +500,8 @@ models = [
    "gpt-4",
      "gpt-4o" ,
    "gpt-3.5-turbo"
-     #comment out for now
    ]
 
-#Here, we loop through a list of dictionaries with our constructed prompts, and feed ChatGPT each prompt.
-
-#Then, we get ChatGPT's answer, pull out specific parts of the answer, and dump all of this information into our Google spreadsheet (row by row).
 
 # add header rows if new file
 if args.output_existing != "yes":
@@ -540,15 +536,12 @@ if args.output_existing != "yes":
                           "prompt_type",
                           "poem_text",
                             "title",
-                          #  "num_lines",
-                          #  "num_stanzas",
                           "author",
                           "birth_death_dates",
                           "form",
                           "model_form_guess",
                           "correctness",
                           "confidence",
-                          # "chatgpt_multi_forms",
                           "elab_rationale",
                           "one_word_summary",
                           "answer",
@@ -572,7 +565,7 @@ for model_choice in models:
           messages=[
               {
                   "role": "user",
-                  # Cap max 4090 tokens to fit ChatGPT limits
+                  # Cap max 4090 tokens 
                   "content": f"{prompt_dict['prompt'][:4090]}",
               },
           ],

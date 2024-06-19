@@ -4,7 +4,6 @@
 # This script will evaluate poems from a supplied Google Sheet (if the data is structured in the right way) and dump results into another Google Sheet
 
 # Install and Load Libraries
-from openai import OpenAI
 import pytz
 from datetime import datetime
 import pandas as pd
@@ -73,7 +72,6 @@ input_worksheet = gc.open(input_file).sheet1
 
 # Read in poem CSV
 poem_df = pd.DataFrame(input_worksheet.get_all_records())
-
 
 # Drop poems that are blanks
 poem_df = poem_df[poem_df['poem_text'] != ""]
@@ -777,15 +775,12 @@ if args.output_existing != "yes":
                             "prompt_type",
                             "poem_text",
                              "title",
-                           #  "num_lines",
-                           #  "num_stanzas",
                             "author",
                             "birth_death_dates",
                             "form",
                             "model_form_guess",
                             "correctness",
                             "confidence",
-                           # "chatgpt_multi_forms",
                             "elab_rationale",
                             "one_word_summary",
                             "answer",
@@ -804,15 +799,12 @@ if args.output_existing != "yes":
                           "prompt_type",
                           "poem_text",
                             "title",
-                          #  "num_lines",
-                          #  "num_stanzas",
                           "author",
                           "birth_death_dates",
                           "form",
                           "model_form_guess",
                           "correctness",
                           "confidence",
-                          # "chatgpt_multi_forms",
                           "elab_rationale",
                           "one_word_summary",
                           "answer",
