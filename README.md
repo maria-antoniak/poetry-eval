@@ -11,6 +11,7 @@ This repository contains code and data for the following paper.
 The data in this repository includes:
 - [1.4k+ public domain poems](data/poetry-evaluation_public-domain-poems.csv) tagged by poetic form by the Poetry Foundation, the Academy of American Poets, or both — with accompanying metadata such as subject tags and author birth and death dates where available
 - retrieval metadata from [Dolma](https://allenai.github.io/dolma/) using the [WIMBD](https://github.com/allenai/wimbd) platform including source domains for each detected poem
+- memorization predictions using n-gram overlap between true poems and generated poem continuations by GPT-4 
 
 <br><br>
 
