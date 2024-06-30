@@ -746,22 +746,7 @@ constructed_prompts = sorted(constructed_prompts, key=lambda d: d['poem'])
 #print(constructed_prompts[2120])
 
 #-------------------------------------------------------------------------------------------------------
-# Feed Prompts to ChatGPT and Dump to Google Sheet
 
-#Initialize OpenAI client
-
-# client = OpenAI(
-#     # defaults to os.environ.get("OPENAI_API_KEY")
-#     api_key= openai_api_key,
-# )
-
-# # models = [ "gpt-4",
-# #      "gpt-4o" ,
-# #    "gpt-3.5-turbo"
-# #      #comment out for now
-# #    ]
-
-import os
 
 #Here, we loop through a list of dictionaries with our constructed prompts, and feed the LLM each prompt.
 
@@ -870,15 +855,6 @@ import time
 
 api = replicate.Client(api_token=my_secrets.replicate_api_key)
 
-output = api.run(
-                 "meta/meta-llama-3-70b-instruct",
-                input={
-                    "prompt": f"hello",
-                    "prompt_template": "system\n\nYou are a helpful assistantuser\n\n{prompt}assistant\n\n"
-                },
-            )
-answer = ''.join(output)
-print(answer)
 def prompt_model(model_choice, prompt_dict, max_retries=1):
     for attempt in range(max_retries + 1):
         try:
