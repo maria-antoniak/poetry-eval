@@ -2,7 +2,12 @@
 
 This repository contains code and data for the following paper.
 
-**Sonnet or Not, Bot? Poetry Evaluation for Large Models and Datasets**
+[Sonnet or Not, Bot? Poetry Evaluation for Large Models and Datasets](https://arxiv.org/abs/2406.18906)
+Melanie Walsh, Anna Preus, Maria Antoniak
+EMNLP Findings 2024
+
+Please cite this paper when using resources found in this repository.
+
 
 <br><br>
 
