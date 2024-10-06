@@ -1,6 +1,6 @@
 # Sonnet or Not, Bot?
 
-This repository contains code and data for the following paper.
+This repository contains code and data for the following research study.
 
 [Sonnet or Not, Bot? Poetry Evaluation for Large Models and Datasets](https://arxiv.org/abs/2406.18906)  
 Melanie Walsh, Anna Preus, Maria Antoniak  
